@@ -2,7 +2,7 @@
 Code for interfacing Impinj Readers with Compute and GUI for displaying the sensing values
 
 * Contains the source code for SenSync, an independent platform for real-time batteryless, wireless RFID based sensing
-<!-- * Work can be referred to at: [SenSync](https://dl.acm.org/doi/10.1145/3666025.3699342) -->
+* Base work for the hardware can be referred to at: [ZenseTag](https://dl.acm.org/doi/10.1145/3666025.3699342)
 
 ## How to Compile and Run the Java Programs
 **Ensure Java dependencies are available**
