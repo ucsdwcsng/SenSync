@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations>
+    <sensor_configs>
+        <sensor name="stub">
+            <epcs>
+                <epc>ADDAFB63AC1F3841EC880467</epc>
+                <epc>ADDA1B63AC1F3841EC880467</epc>
+            </epcs>
+            <classification />
+            <window>0.5</window>
+            <y_range>60</y_range>
+        </sensor>
+        <sensor name="soil">
+            <epcs>
+                <epc>5555DEEDAC1F3841EC880A01</epc>
+                <epc>5555BABAAC1F3841EC880A02</epc>
+                <!-- <epc>5555FB63AC1F3841EC880B01</epc>
+                <epc>5555FB63AC1F3841EC880B02</epc> -->
+                <!-- <epc>DEEDDEEDAC1F3841EC880467</epc>
+                <epc>BABABABAAC1F3841EC880467</epc> -->
+            </epcs>
+            <classification>
+                <saturated>27</saturated>
+                <moist>55</moist>
+                <dry>150</dry>
+            </classification>
+            <window>5</window>
+            <y_range>75</y_range>
+        </sensor>
+        <sensor name="force">
+            <epcs>
+                <epc>FFFFFB63AC1F3841EC880A01</epc>
+                <epc>FFFFFB63AC1F3841EC880A02</epc>
+                <!-- <epc>FF00FB63AC1F3841EC880E01</epc>
+                <epc>FF00FB63AC1F3841EC880E02</epc> -->
+                <!-- <epc>FFFFFB63AC1F3841EC880B01</epc>
+                <epc>FFFFFB63AC1F3841EC880B02</epc> -->
+                <!-- <epc>FF05FB63AC1F3841EC880C01</epc>
+                <epc>FF05FB63AC1F3841EC880C02</epc> -->
+            </epcs>
+            <classification>
+                <light>30</light>
+                <heavy>90</heavy>
+            </classification>
+            <window>4</window>
+            <y_range>90</y_range>
+        </sensor>
+        <sensor name="forcesticker">
+            <epcs>
+                <epc>FF00FB63AC1F3841EC880E01</epc>
+                <epc>FF00FB63AC1F3841EC880E02</epc>
+                </epcs>
+            <classification>
+                <light>30</light>
+                <heavy>90</heavy>
+            </classification>
+            <window>4</window>
+            <y_range>90</y_range>
+        </sensor>
+        <sensor name="photo">
+            <epcs>
+                <!-- <epc>8888FB63AC1F3681EC880A01</epc>
+                <epc>8888FB63AC1F3681EC880A02</epc> -->
+                <epc>8887FB63AC1F3841EC880B01</epc>
+                <epc>8887FB63AC1F3841EC880B02</epc>
+                <!-- <epc>8888FB63AC1F3841EC880C01</epc>
+                <epc>8888FB63AC1F3841EC880C02</epc> -->
+            </epcs>
+            <classification>
+                <bright>30</bright>
+                <medium>45</medium>
+                <dark>60</dark>
+            </classification>
+            <window>2</window>
+            <y_range>45</y_range>
+        </sensor>
+        <sensor name="test">
+            <epcs>
+                <epc>1111FB63AC1F3841EC880A01</epc>
+                <epc>1111FB63AC1F3841EC880A02</epc>
+                <!-- <epc>1111FB63AC1F3681EC880B01</epc>
+                <epc>1111FB63AC1F3681EC880B02</epc> -->
+            </epcs>
+            <classification>
+                <more>30</more>
+                <less>60</less>
+            </classification>
+            <window>0.1</window>
+            <y_range>120</y_range>
+        </sensor>
+    </sensor_configs>
+
+    <sensor_def>test</sensor_def>
+
+    <is_dtw>true</is_dtw>
+
+    <project>zensetag</project>
+    <read_rate>700</read_rate>
+
+    <max_tag_history>20000</max_tag_history>
+
+    <impinj>
+        <host_ip>169.254.34.180</host_ip>
+        <host_port>5084</host_port>
+    </impinj>
+
+    <store_data>true</store_data>
+
+    <repo_name>SenSync</repo_name>
+
+    <antenna_reader_configs>
+        <reader>
+            <antenna>0</antenna>
+            <rf_mode>0</rf_mode>
+            <session>0</session>
+            <tagPopulation>2</tagPopulation>
+        </reader>
+        <report>
+            <channel>true</channel>
+            <rssi>true</rssi>
+            <timestamp>true</timestamp>
+            <count>false</count>
+            <phase>true</phase>
+        </report>
+    </antenna_reader_configs>
+</configurations>
