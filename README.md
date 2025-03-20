@@ -23,7 +23,7 @@ Code for interfacing Impinj Readers with Compute and GUI for displaying the sens
    java -cp "./lib/fastdtw.jar;./lib/octane.jar;./lib/jfreechart.jar;./lib/flatlaf.jar;./lib/websocket.jar;./lib/sl4j.jar;src" RealTimeGui
    ```
 
-## Sensor Configuration File
+## Sensor Configuration File - ./lib/params.xml
 
 This XML configuration file defines settings for a sensor-based system using RFID technology. The file includes sensor-specific configurations, system-wide parameters, and reader settings.
 
@@ -61,9 +61,7 @@ Defines multiple sensors and their associated EPC (Electronic Product Code) tags
 
 ### Other Configuration Parameters
 
-- `<sensor_def>`: Specifies a test mode (`test`).
-- `<is_dtw>`: Determines if Dynamic Time Warping (DTW) is enabled (`true`).
-- `<project>`: Name of the project (`zensetag`).
+- `<sensor_def>`: Specifies a test mode (`stub`).
 - `<read_rate>`: Defines the read rate (`700`).
 - `<max_tag_history>`: Maximum number of historical tag records stored (`20000`).
 
@@ -96,10 +94,10 @@ Configures the antenna reader.
 - The **network configuration** (IP and port) must be properly set to connect with the reader.
 - The **Dynamic Time Warping (DTW) algorithm** is enabled, requiring computational resources.
 - Data processing and visualization may rely on external software, depending on how this configuration is used.
+- Software would need the jar files present in the ./lib directory
 
 ## Notes
 - EPCs marked as comments are currently disabled but can be re-enabled if needed.
-- DTW processing is enabled (`true`), which may impact computational complexity.
 - Ensure that the RFID reader's IP address and port match the hardware configuration.
 
 This configuration file is essential for defining the behavior of the system and should be modified carefully to suit specific project requirements.
