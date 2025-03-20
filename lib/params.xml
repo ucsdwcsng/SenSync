@@ -49,9 +49,6 @@
 
     <sensor_def>test</sensor_def>
 
-    <is_dtw>true</is_dtw>
-
-    <project>zensetag</project>
     <read_rate>700</read_rate>
 
     <max_tag_history>20000</max_tag_history>
